@@ -6,21 +6,25 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import java.util.ArrayList;
 
 public class SynthesizerActivity extends AppCompatActivity {
     private static final String TAG = SynthesizerActivity.class.getName();
-    private Button button1;
-    private Button button2;
-    private MediaPlayer mpA;
-    private MediaPlayer mpB;
-    private MediaPlayer mpC;
-    private MediaPlayer mpCs;
-    private MediaPlayer mpD;
-    private MediaPlayer mpE;
-    private MediaPlayer mpEE;
-    private MediaPlayer mpF;
-    private MediaPlayer mpFF;
+    public Button button1;
+    public Button button2;
+    public MediaPlayer mpA;
+    public MediaPlayer mpB;
+    public MediaPlayer mpC;
+    public MediaPlayer mpCs;
+    public MediaPlayer mpD;
+    public MediaPlayer mpE;
+    public MediaPlayer mpEE;
+    public MediaPlayer mpF;
+    public MediaPlayer mpFF;
     private final int WHOLE_NOTE = 1000;
+    ArrayList<MediaPlayer> twinklestar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,22 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
 
+        twinklestar = new ArrayList<>();
+
+        twinklestar.add(mpA);
+        twinklestar.add(mpA);
+        twinklestar.add(mpEE);
+        twinklestar.add(mpEE);
+        twinklestar.add(mpFF);
+        twinklestar.add(mpFF);
+        twinklestar.add(mpEE);
+        twinklestar.add(mpD);
+        twinklestar.add(mpD);
+        twinklestar.add(mpCs);
+        twinklestar.add(mpCs);
+        twinklestar.add(mpB);
+        twinklestar.add(mpB);
+        twinklestar.add(mpA);
     }
 
 
@@ -58,43 +78,20 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpA.start();
 
     }
+
+
     public void onButton2Click(View v) throws InterruptedException {
-        mpE.seekTo(0);
-        mpEE.seekTo(0);
-        mpA.seekTo(0);
-        mpFF.seekTo(0);
-        mpD.seekTo(0);
-        mpCs.seekTo(0);
-        mpB.seekTo(0);
-        mpA.seekTo(0);
-        Log.i(TAG,"Button 2 Clicked");
-        mpA.start();
-        delayPlaying(300);
-        mpA.start();
-        delayPlaying(300);
-        mpEE.start();
-        delayPlaying(300);
-        mpEE.start();
-        delayPlaying(300);
-        mpFF.start();
-        delayPlaying(300);
-        mpFF.start();
-        delayPlaying(300);
-        mpEE.start();
-        delayPlaying(300);
-        mpD.start();
-        delayPlaying(300);
-        mpD.start();
-        delayPlaying(300);
-        mpCs.start();
-        delayPlaying(300);
-        mpCs.start();
-        delayPlaying(300);
-        mpB.start();
-        delayPlaying(300);
-        mpB.start();
-        delayPlaying(300);
-        mpA.start();
-        delayPlaying(300);
+
+        for(MediaPlayer note : twinklestar) {
+                note.seekTo(0);
+                note.start();
+            try {
+                delayPlaying(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            note.pause();
+        }
+        }
     }
 }
