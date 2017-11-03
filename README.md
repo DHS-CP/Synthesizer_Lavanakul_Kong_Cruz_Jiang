@@ -1,2 +1,0 @@
-# Synthesizer_Lavanakul_Kong_Cruz_Jiang
-Synthesizer assignment
