@@ -16,29 +16,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/babyButton"
+        android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="challenge1"
         android:onClick="onButton1Click"
-        android:text="@string/button1" />
+        tools:layout_editor_absoluteY="-1dp"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
-        android:id="@+id/adelebutton"
+        android:id="@+id/Button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:onClick="onButton2Click"
-        android:text="@string/button2"
-        tools:layout_editor_absoluteX="0dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/babyButton" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="138dp"
-        android:layout_height="56dp"
-        android:max="10"
-        tools:layout_editor_absoluteY="135dp"
+        android:text="challenge5"
+        app:layout_constraintTop_toBottomOf="@+id/Button1"
         tools:layout_editor_absoluteX="16dp" />
 
 </android.support.constraint.ConstraintLayout>
