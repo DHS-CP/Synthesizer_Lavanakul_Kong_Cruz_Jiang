@@ -279,8 +279,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpA.start();
         delayPlaying(WHOLE_NOTE);
         mpA.pause();
-        mpA.seekTo(0);
-        mpA.start();
+        mpA.seekTo(0);        mpA.start();
         delayPlaying(WHOLE_NOTE);
         mpA.pause();
         mpA.seekTo(0);
@@ -334,7 +333,45 @@ public class SynthesizerActivity extends AppCompatActivity {
         delayPlaying(WHOLE_NOTE);
         mpA.pause();
         mpA.seekTo(0);
-
        }
+    public void onButton3Click(View V) throws InterruptedException{
+        mpB.seekTo(0);
+        Log.i(TAG,"Button 3 Clicked");
+        delayPlaying(WHOLE_NOTE/2);
+        mpB.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpAs.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpB.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpA.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpGs.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpA.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpA.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpA.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpA.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpB.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpAs.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
+        
+    }
     }
 
