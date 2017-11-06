@@ -66,18 +66,25 @@ public class SynthesizerActivity extends AppCompatActivity {
         delayPlaying(WHOLE_NOTE/2);
         mpE.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpFs.seekTo(0);
         mpFs.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpG.seekTo(0);
         mpG.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpA.seekTo(0);
         mpA.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpB.seekTo(0);
         mpB.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpCs.seekTo(0);
         mpCs.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpD.seekTo(0);
         mpD.start();
         delayPlaying(WHOLE_NOTE/2);
+        mpE.seekTo(0);
         mpE.start();
         delayPlaying(WHOLE_NOTE/2);
 
