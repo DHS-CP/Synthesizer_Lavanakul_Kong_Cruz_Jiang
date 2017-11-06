@@ -169,7 +169,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpA.pause();
         mpA.seekTo(0);
         mpHighE.start();
-        delayPlaying(WHOLE_NOTE)       
+        delayPlaying(WHOLE_NOTE);
         mpHighE.pause();
         mpHighE.seekTo(0);
         mpHighE.start();
@@ -334,21 +334,21 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpA.pause();
         mpA.seekTo(0);
        }
-    public void onButton3Click(View V) throws InterruptedException{
+    public void onButton4Click(View V) throws InterruptedException{
         mpB.seekTo(0);
-        Log.i(TAG,"Button 3 Clicked");
-        delayPlaying(WHOLE_NOTE/2);
-        mpB.start();
-        delayPlaying(WHOLE_NOTE/2);
-        mpAs.start();
-        delayPlaying(WHOLE_NOTE/2);
-        mpG.start();
+        Log.i(TAG,"Button 4 Clicked");
         delayPlaying(WHOLE_NOTE/2);
         mpB.start();
         delayPlaying(WHOLE_NOTE/2);
         mpA.start();
         delayPlaying(WHOLE_NOTE/2);
-        mpGs.start();
+        mpG.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpB.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpA.start();
+        delayPlaying(WHOLE_NOTE/2);
+        mpG.start();
         delayPlaying(WHOLE_NOTE/2);
         mpG.start();
         delayPlaying(WHOLE_NOTE/2);
@@ -368,7 +368,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         delayPlaying(WHOLE_NOTE/2);
         mpB.start();
         delayPlaying(WHOLE_NOTE/2);
-        mpAs.start();
+        mpA.start();
         delayPlaying(WHOLE_NOTE/2);
         mpG.start();
         
